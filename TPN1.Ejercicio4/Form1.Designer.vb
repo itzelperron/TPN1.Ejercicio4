@@ -22,46 +22,65 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Button1 = New Button()
-        Label1 = New Label()
-        Button2 = New Button()
+        Me.cmdEjecutar = New Button()
+        lblMostrar = New Label()
+        txtNumero2 = New TextBox()
+        txtNumero3 = New TextBox()
+        txtNumero1 = New TextBox()
         SuspendLayout()
         ' 
-        ' Button1
+        ' cmdEjecutar
         ' 
-        Button1.Location = New Point(239, 152)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(210, 101)
-        Button1.TabIndex = 0
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        Me.cmdEjecutar.Location = New Point(195, 128)
+        Me.cmdEjecutar.Margin = New Padding(2, 2, 2, 2)
+        Me.cmdEjecutar.Name = "cmdEjecutar"
+        Me.cmdEjecutar.Size = New Size(147, 61)
+        Me.cmdEjecutar.TabIndex = 0
+        Me.cmdEjecutar.Text = "Ejecutar"
+        Me.cmdEjecutar.UseVisualStyleBackColor = True
         ' 
-        ' Label1
+        ' lblMostrar
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(225, 51)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(63, 25)
-        Label1.TabIndex = 1
-        Label1.Text = "Label1"
+        lblMostrar.AutoSize = True
+        lblMostrar.Location = New Point(246, 101)
+        lblMostrar.Margin = New Padding(2, 0, 2, 0)
+        lblMostrar.Name = "lblMostrar"
+        lblMostrar.Size = New Size(59, 15)
+        lblMostrar.TabIndex = 1
+        lblMostrar.Text = "Resultado"
         ' 
-        ' Button2
+        ' txtNumero2
         ' 
-        Button2.Location = New Point(452, 88)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(229, 58)
-        Button2.TabIndex = 2
-        Button2.Text = "Button2"
-        Button2.UseVisualStyleBackColor = True
+        txtNumero2.Location = New Point(204, 59)
+        txtNumero2.Name = "txtNumero2"
+        txtNumero2.Size = New Size(128, 23)
+        txtNumero2.TabIndex = 2
+        ' 
+        ' txtNumero3
+        ' 
+        txtNumero3.Location = New Point(351, 59)
+        txtNumero3.Name = "txtNumero3"
+        txtNumero3.Size = New Size(127, 23)
+        txtNumero3.TabIndex = 3
+        ' 
+        ' txtNumero1
+        ' 
+        txtNumero1.Location = New Point(54, 59)
+        txtNumero1.Name = "txtNumero1"
+        txtNumero1.Size = New Size(127, 23)
+        txtNumero1.TabIndex = 4
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(Button2)
-        Controls.Add(Label1)
-        Controls.Add(Button1)
+        ClientSize = New Size(560, 270)
+        Controls.Add(txtNumero1)
+        Controls.Add(txtNumero3)
+        Controls.Add(txtNumero2)
+        Controls.Add(lblMostrar)
+        Controls.Add(Me.cmdEjecutar)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
@@ -69,7 +88,9 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents lblMostrar As Label
+    Friend WithEvents txtNumero2 As TextBox
+    Friend WithEvents txtNumero3 As TextBox
+    Friend WithEvents txtNumero1 As TextBox
 
 End Class
