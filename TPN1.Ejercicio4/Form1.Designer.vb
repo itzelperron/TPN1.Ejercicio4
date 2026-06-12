@@ -58,7 +58,7 @@ Partial Class Form1
         ' 
         ' txtNumero3
         ' 
-        txtNumero3.Location = New Point(351, 59)
+        txtNumero3.Location = New Point(352, 59)
         txtNumero3.Name = "txtNumero3"
         txtNumero3.Size = New Size(127, 23)
         txtNumero3.TabIndex = 3
